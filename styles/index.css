@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
+/*********************GENERAL********************/
+* {
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+body {
+  margin: 0 auto;
+  max-width: 992px;
+}
+
+/**********************LOGO********************/
+header{
+margin: 0 30px;
+display: flex;
+justify-content: space-between;
+}
+
+h1{
+margin:0 30px;
+padding-top: 20px;
+}
+h1 img {
+  width: 80px;
+}
+/********************BARNAV*********************/
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+#header-nav {
+  display: flex;
+  width: 250px;
+}
+#header-nav a {
+  font-size: 14px;
+  text-align: center;
+  width: 50%;
+  padding: 30px 0;
+}
+
+nav a {
+  border: 2px solid transparent;
+  text-align: center;
+  font-weight: 500;
+}
+nav a:hover {
+  border-top: 3px solid #0065fc;
+  color: #0065fc;
+}
+
+/********************FORMULAR*******************/
+.search {
+  margin:0 30px;
+}
+.search h2 {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.search p {
+  font-size: 11px;
+  padding: 7px 0px;
+  font-weight: 500;
+}
+/*******************FORM************************/
+form {
+  display: flex;
+  padding: 15px 0;
+  border-radius: 0px 20px 0px 20px;
+}
+::placeholder {
+  color: black;
+  font-weight: bold;
+}
+#marker-button {
+  background-color: #f2f2f2;
+  padding: 10px 14px;
+  border-radius: 10px 0px 0px 10px;
+}
+#marker-button .fa {
+  font-size: 12px;
+}
+.submit {
+  text-transform: capitalize;
+  font-size: 12px;
+  padding: 10px;
+  border-radius: 0px 14px 14px 0px;
+  background-color: #0065fc;
+  color: white;
+  z-index: 1;
+}
+.cities {
+  font-size: 12px;
+  padding: 0px 2px 0px 15px;
+}
+form,
+#marker,
+.submit,
+.cities {
+  font-weight: bold;
+  border: none;
+}
+/* icon for responsive design */
+#search-button {
+  position: relative;
+  right: 80px;
+  background-color: #0065fc;
+  padding: 9px 15px;
+  border-radius: 10px 10px 10px 10px;
+}
+.fa-search {
+  color: #ffffff;
+  font-size: 10px;
+}
+
+/**************FILTRERED******************/
+.container-filtered {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 30px;
+}
+
+.container-filtered h2 {
+  font-size: 14px;
+  text-transform: capitalize;
+  padding: 10px;
+  padding-top: 15px;
+  margin-right: 5px;
+}
+.container-filtered ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 30px;
+}
+.container-filtered li {
+  display: flex;
+  text-transform: capitalize;
+  border-radius: 30px;
+  border: 3px solid #f2f2f2;
+  margin: 2px 5px;
+}
+.container-filtered li a {
+  margin: -3px 14px -3px -3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.container-filtered li:hover {
+  background-color: #deebff;
+  border: 3px solid #deebff;
+}
+.container-filtered .fas {
+  background-color: #deebff;
+  font-size: 15px;
+  padding: 10px 9px;
+  border-radius: 50%;
+  margin-right: 5px;
+  color: #0065fc;
+}
+.container-filtered .fa {
+  padding: 12px 10px;
+  font-size: 12px;
+}
+.container-filtered .fa-fa {
+  padding: 12px 14px;
+  font-size: 12px;
+}
+.container-filtered .fa-ro {
+  padding: 12px 12px;
+  font-size: 12px;
+}
+.container-filtered .fa-an {
+  padding: 9px 12px;
+  font-size: 11px;
+}
+.info {
+  padding: 20px 5px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.info .fas {
+  border: 2px solid #f2f2f2;
+  padding: 4px 7px;
+  border-radius: 50%;
+  font-size: 9px;
+  background-color: transparent;
+}
+
+/***************ACCOMMODATION******************/
+#accommodation {
+  display: flex;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+#accommodation > div {
+background-color: #f2f2f2;
+  border-radius: 20px;
+}
+.city {
+  flex: 2;
+}
+#accommodation .details {
+  text-decoration: none;
+  font-weight: 700;
+  margin: 15px 0;
+}
+.city h3 {
+  font-size: 15px;
+  margin: 25px 0px 10px 30px;
+}
+
+/**********************ROOMS********************/
+.rooms {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.rooms div {
+  background-color: #ffffff;
+  flex-basis: auto;
+  border-radius: 15px;
+  padding: 3px;
+  box-shadow: 0px 1px 16px rgb(201, 201, 201);
+}
+.rooms div:hover {
+  box-shadow: 0px 1px 16px rgba(5, 5, 5, 0.5);
+}
+
+.rooms h4,
+.price,
+.stars {
+  margin: 0 5px;
+}
+.rooms h4 {
+  font-size: 12px;
+  font-weight: 700;
+  padding-top: 5px;
+}
+.rooms .price {
+  font-size: 12px;
+  font-weight: 500;
+  padding-top: 2px;
+}
+
+/*******************CARD ROOMS******************/
+.card-rooms a {
+  margin: 0;
+}
+.rooms img {
+  width: 170px;
+  height: 80px;
+  border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
+}
+.color1 {
+  color: #0065fc;    
+}                       /*******COLOR STARS*******/
+.color2 {
+  color: #d9d9d9;
+}
+.rooms .stars {
+  font-size: 9px;
+  letter-spacing: -1px;
+  padding-top: 4px;
+}
+#more {
+  font-weight: bold;
+  padding: 25px;
+}
+/*******************POPULAR*******************/
+.popular {
+  flex: 1;
+  margin-left: 25px;
+}
+.popular-rooms {
+  padding: 0 15px;
+}
+.popular-rooms div {
+  display: flex;
+  width: auto;
+}
+
+#title-card {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 30px;
+}
+#title-card h3 {
+  font-size: 15px;
+  font-weight: bold;
+}
+#title-card .chart {
+  font-size: 16px;
+}
+/*****************POPULAR CARDS******************/
+.info-card {
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-top: 10px;
+}
+.info-card h4 {
+  margin-bottom: 5px;
+  font-size: 13px;
+  width:130px;
+  margin-left: 15px;
+}
+.info-card p {
+  font-size: 12px;
+  font-weight: 500;
+  padding-left: 15px;
+}
+.popular-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 3px;
+  margin: 20px 10px;
+  box-shadow: 0px 1px 16px rgb(201, 201, 201);
+}
+.popular-card:hover {
+  box-shadow: 0px 1px 16px rgba(5, 5, 5, 0.5);
+}
+
+.popular-card img {
+  width: 90px;
+  height: 95px;
+  object-fit: cover;
+  border-radius: 15px 0px 0px 15px;
+}
+.info-card .stars-pop {
+  font-size:9px;
+  letter-spacing: -1px;
+  padding-top: 20px;
+}
+/********************ACTIVITIES*********************/
+#activity {
+  
+  margin: 0 30px;
+}
+#activity h3 {
+  font-size: 15px;
+  padding-top: 30px;
+  margin: 15px 0;
+}
+.list-activity {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.two-activity {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-activity {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(153, 153, 153, 0.555);
+}
+.card-activity:hover {
+  
+  box-shadow: 0px 0px 10px rgba(5, 5, 5, 0.5);
+}
+.card-activity img {
+  width: 215px;
+  border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
+}
+.card-activity img {
+  height: 250px;
+}
+.card-activity #fort {
+  height: 110px;
+}
+.card-activity #ile {
+  height: 65px;
+}
+.card-activity #garde {
+  height: 90px;
+}
+.card-activity #longchamp {
+  height: 90px;
+}
+.list-activity .card-activity p {
+  font-size: 12px;
+  font-weight: 700;
+  width: 100%;
+  padding: 10px;
+}
+/**********************FOOTER**********************/
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #f2f2f2;
+  margin-top: 40px;
+}
+.more {
+  font-weight: 400;
+  margin: 0 30px;
+  padding-bottom: 40px;
+  margin-right: auto;
+}
+.more a:hover{
+font-weight: 500;
+}
+.more h4 {
+  margin: 20px 0;
+  padding-top: 20px;
+  font-size: 15px;
+}
+
+footer .more:first-child a {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+.more a {
+  font-size: 14px;
+  display: flex;
+  padding-bottom: 10px;
+}

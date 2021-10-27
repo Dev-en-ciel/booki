@@ -1,0 +1,175 @@
+@media screen and (max-width: 991px) {
+  /****************GENERAL***************/
+
+  body {
+    max-width: 991px;
+  }
+
+  /***************header***********/
+  header {
+    margin-left: 0;
+    margin-right: 0;
+    flex-direction: column;
+  }
+  header h1 {
+    margin: auto;
+  }
+
+  /*************BARNAV***************/
+  #header-nav {
+    margin: 0px;
+    width: 100%;
+  }
+  nav a:hover {
+    border-top: hidden;
+    border-bottom: 2px solid #0065fc;
+    color: #0065fc;
+  }
+  /****************FORM*************/
+  .search h2 {
+    font-size: 20px;
+  }
+
+  /***********ccommodation***********/
+  #accommodation {
+    margin: 0;
+    flex-direction: column;
+  }
+  #accommodation .city {
+    background-color: transparent;
+    order: 1;
+    margin-top: 20px;
+  }
+  #accommodation .popular {
+    margin: 0;
+    border-radius: 0;
+    width: 100%;
+  }
+  .city h3 {
+    font-size: 20px;
+    margin: 10px 25px;
+  }
+  .card-rooms a {
+    margin: 0;
+  }
+  .rooms img {
+    width: 250px;
+    height: 100px;
+  }
+  /******popular******/
+  .popular-rooms {
+    width: 420px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .popular-card {
+    width: 100px;
+  }
+  .info-card {
+    width: auto;
+  }
+  #title-card {
+    margin: 30px 50px;
+  }
+  #title-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  #title-card .chart {
+    font-size: 20px;
+  }
+
+  .popular-card img {
+    width: 120px;
+    height: 130px;
+    border-radius: 15px 0px 0px 15px;
+  }
+
+  /*****section activity ******/
+  .list-activity {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-activity {
+    width: 500px;
+    margin: 10px 0;
+  }
+  .two-activity {
+    width: 500px;
+  }
+  .card-activity img {
+    width: 100%;
+    align-items: center;
+  }
+  .card-activity img {
+    height: 100px;
+  }
+  .card-activity #fort,
+  .card-activity #ile,
+  .card-activity #garde,
+  .card-activity #longchamp {
+    height: 100px;
+  }
+  /*******footer*******/
+  footer {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+/***************MOBIL MODE***************/
+
+@media screen and (max-width: 768px) {
+  /****************FORMULAR******************/
+  .cities {
+    width: 100%;
+  }
+
+  /***************SUBMIT***************/
+  .submit {
+    visibility: hidden;
+  }
+  #search-button {
+    right: 100px;
+  }
+  .fa-search {
+    z-index: 2;
+  }
+
+  /************ACCOMMODATION************/
+  .rooms img {
+    width: 350px;
+    height: 100px;
+  }
+  /************POPULAR*****************/
+
+  #title-card {
+    font-size: 20px;
+    margin: 10px 30px;
+  }
+
+  /*********ACTIVITIES********/
+  #activity h3 {
+    font-size: 20px;
+    margin: 10px 20px;
+  }
+  .card-activity {
+    width: 350px;
+    margin: 10px 0;
+  }
+  .two-activity {
+    width: 350px;
+  }
+  .card-activity img {
+    width: 350px;
+  }
+
+  /************FOOTER*************/
+  .more {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  .more h4 {
+    margin: 10px 0;
+  }
+}
