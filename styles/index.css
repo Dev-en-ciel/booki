@@ -12,9 +12,9 @@ a {
   text-decoration: none;
   color: black;
 }
-body {
+.container{
   margin: 0 auto;
-  max-width: 992px;
+  max-width: 1200px;
 }
 
 /**********************LOGO********************/
@@ -29,7 +29,7 @@ margin:0 30px;
 padding-top: 20px;
 }
 h1 img {
-  width: 80px;
+  width: 90px;
 }
 /********************BARNAV*********************/
 nav {
@@ -65,11 +65,11 @@ nav a:hover {
 }
 .search h2 {
   margin-top: 10px;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: bold;
 }
 .search p {
-  font-size: 11px;
+  font-size: 14px;
   padding: 7px 0px;
   font-weight: 500;
 }
@@ -89,19 +89,19 @@ form {
   border-radius: 10px 0px 0px 10px;
 }
 #marker-button .fa {
-  font-size: 12px;
+  font-size: 13px;
 }
 .submit {
   text-transform: capitalize;
-  font-size: 12px;
-  padding: 10px;
+  font-size: 14px;
+  padding: 12px;
   border-radius: 0px 14px 14px 0px;
   background-color: #0065fc;
   color: white;
   z-index: 1;
 }
 .cities {
-  font-size: 12px;
+  font-size: 14px;
   padding: 0px 2px 0px 15px;
 }
 form,
@@ -142,7 +142,7 @@ form,
 .container-filtered ul {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 30px;
+  margin-right: 90px;
 }
 .container-filtered li {
   display: flex;
@@ -153,7 +153,7 @@ form,
 }
 .container-filtered li a {
   margin: -3px 14px -3px -3px;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: bold;
 }
 .container-filtered li:hover {
@@ -186,7 +186,7 @@ form,
 }
 .info {
   padding: 20px 5px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
 }
 .info .fas {
@@ -215,16 +215,16 @@ background-color: #f2f2f2;
   font-weight: 700;
   margin: 15px 0;
 }
-.city h3 {
-  font-size: 15px;
-  margin: 25px 0px 10px 30px;
+.city h2 {
+  font-size: 16px;
+  margin: 25px 0px 10px 20px;
 }
 
 /**********************ROOMS********************/
 .rooms {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .rooms div {
@@ -238,13 +238,16 @@ background-color: #f2f2f2;
   box-shadow: 0px 1px 16px rgba(5, 5, 5, 0.5);
 }
 
-.rooms h4,
+.rooms h3,
 .price,
 .stars {
-  margin: 0 5px;
+  margin: 0px 7px;
 }
-.rooms h4 {
-  font-size: 12px;
+.stars{
+margin-bottom: 3px;
+}
+.rooms h3 {
+  font-size: 14px;
   font-weight: 700;
   padding-top: 5px;
 }
@@ -259,33 +262,36 @@ background-color: #f2f2f2;
   margin: 0;
 }
 .rooms img {
-  width: 170px;
-  height: 80px;
+  width: 210px;
+  height: 90px;
   border-radius: 15px 15px 0px 0px;
   object-fit: cover;
 }
 .color1 {
   color: #0065fc;    
-}                       /*******COLOR STARS*******/
+}                       /**COLOR STARS**/
 .color2 {
   color: #d9d9d9;
 }
 .rooms .stars {
-  font-size: 9px;
+  font-size: 12px;
   letter-spacing: -1px;
   padding-top: 4px;
 }
 #more {
+font-size: 15px;
   font-weight: bold;
-  padding: 25px;
+  padding: 20px 0px 30px 30px;
 }
-/*******************POPULAR*******************/
+/****POPULAR**/
 .popular {
   flex: 1;
-  margin-left: 25px;
+  margin-left: 22px;
+  width: auto;
 }
 .popular-rooms {
-  padding: 0 15px;
+  padding: 0 25px;
+  width: 100%;
 }
 .popular-rooms div {
   display: flex;
@@ -297,23 +303,23 @@ background-color: #f2f2f2;
   justify-content: space-between;
   margin: 25px 30px;
 }
-#title-card h3 {
-  font-size: 15px;
+#title-card h2 {
+  font-size: 16px;
   font-weight: bold;
 }
 #title-card .chart {
   font-size: 16px;
 }
-/*****************POPULAR CARDS******************/
+          /**POPULAR CARDS**/
 .info-card {
   flex-direction: column;
   justify-content: space-evenly;
   padding-top: 10px;
 }
-.info-card h4 {
+.info-card h3 {
   margin-bottom: 5px;
-  font-size: 13px;
-  width:130px;
+  font-size: 14px;
+  width:125px;
   margin-left: 15px;
 }
 .info-card p {
@@ -333,72 +339,147 @@ background-color: #f2f2f2;
 }
 
 .popular-card img {
-  width: 90px;
-  height: 95px;
+  width: 100px;
+  height: 110px;
   object-fit: cover;
   border-radius: 15px 0px 0px 15px;
 }
 .info-card .stars-pop {
-  font-size:9px;
+  font-size:12px;
   letter-spacing: -1px;
   padding-top: 20px;
 }
-/********************ACTIVITIES*********************/
-#activity {
-  
-  margin: 0 30px;
+
+              /**POPULAR**/
+.popular {
+  flex: 1;
+  margin-left: 22px;
+  width: auto;
 }
-#activity h3 {
-  font-size: 15px;
-  padding-top: 30px;
-  margin: 15px 0;
+.popular-rooms {
+  padding: 0 25px;
+  width: 100%;
+}
+.popular-rooms div {
+  display: flex;
+  width: auto;
+}
+
+#title-card {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 30px;
+}
+#title-card h2 {
+  font-size: 16px;
+  font-weight: bold;
+}
+#title-card .chart {
+  font-size: 16px;
+}
+            /**POPULAR CARDS**/
+.info-card {
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-top: 10px;
+}
+.info-card h3 {
+  margin-bottom: 5px;
+  font-size: 14px;
+  width:125px;
+  margin-left: 15px;
+}
+.info-card p {
+  font-size: 12px;
+  font-weight: 500;
+  padding-left: 15px;
+}
+.popular-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 3px;
+  margin: 20px 10px;
+  box-shadow: 0px 1px 16px rgb(201, 201, 201);
+}
+.popular-card:hover {
+  box-shadow: 0px 1px 16px rgba(5, 5, 5, 0.5);
+}
+
+.popular-card img {
+  width: 100px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 15px 0px 0px 15px;
+}
+.info-card .stars-pop {
+  font-size:12px;
+  letter-spacing: -1px;
+  padding-top: 20px;
+}
+        /**ACTIVITIES**/
+#activity {
+  margin: 0 30px;
+  padding:40px 10px 10px 10px;
+}
+#activity h2 {
+  font-size: 16px;
 }
 .list-activity {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-top: 20px;
 }
 .two-activity {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 23%;
 }
+
 .card-activity {
   background-color: #ffffff;
   border-radius: 15px;
   box-shadow: 0px 0px 10px rgba(153, 153, 153, 0.555);
+  width: 23%;
+}
+.two-activity .card-activity {
+  width: 100%;
+  margin: 0;
 }
 .card-activity:hover {
   
   box-shadow: 0px 0px 10px rgba(5, 5, 5, 0.5);
 }
 .card-activity img {
-  width: 215px;
+  width: 100%;
   border-radius: 15px 15px 0px 0px;
   object-fit: cover;
+  display: block;
 }
 .card-activity img {
-  height: 250px;
+  height: 280px;
 }
 .card-activity #fort {
-  height: 110px;
+  height: 150px;
 }
 .card-activity #ile {
-  height: 65px;
+  height: 70px;
 }
 .card-activity #garde {
-  height: 90px;
+  height: 115px;
 }
 .card-activity #longchamp {
-  height: 90px;
+  height: 105px;
 }
 .list-activity .card-activity p {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
   width: 100%;
-  padding: 10px;
+  padding: 15px;
 }
-/**********************FOOTER**********************/
+
+          /**FOOTER**/
 
 footer {
   display: flex;
@@ -416,7 +497,7 @@ footer {
 .more a:hover{
 font-weight: 500;
 }
-.more h4 {
+.more h3 {
   margin: 20px 0;
   padding-top: 20px;
   font-size: 15px;
